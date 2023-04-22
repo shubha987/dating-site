@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Dating Site</title>
+	<style>
+		
+	</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<nav>
+			<img src="images/logo.png" class="logo">
+			<ul>
+				<li class="home"><a href="dating.html">Home</a></li>
+				<li class="about"><a href="about.html">About</a></li>
+				<div class="dropdown">
+					<li class="vip"><img src="images/crown.png" class="crown"><img src="images/sprinkle.gif" class="sprinkle">VIP</li>
+					<div class="dropdown-content">
+						<p id="b1" class="bd"><a href="#">Blind dates</a></p>
+						<script>
+							const b1 = document.getElementById("b1");
+							b1.addEventListener("mouseover", () => {
+				  			body.style.backgroundImage = "url('images/blinddate.jpg')";
+				  			body.style.objectFit = "contain";
+				  			body.style.backgroundPosition = "center";
+				  			body.style.transition= "0.8s";
+							});
+			
+							b1.addEventListener("mouseout", () => {
+				  			body.style.backgroundImage = "url('images/pic.jpg')";
+				  			body.style.backgroundSize = "cover";
+				  			body.style.backgroundPosition = "center";
+				  			body.style.transition= "0.8s";
+							});
+						</script>
+					</div>
+				</div>
+				<li><a href="blogs.html">Blogs</a></li>
+				<div class="dropdown">
+					<li class="dropbtn">Safety</li>
+					<div class="dropdown-content">
+						<p class="tc"><a href="cg.html">Community Guidelines</a></p>
+	    				<p class="tc"><a href="st.html">Safety tips</a></p>
+	    				<p class="tc"><a href="sp.html">Safety & policy</a></p>
+						<p class="tc"><a href="sr.html">Safety & reporting</a></p>
+	    				<p class="tc"><a href="s.html">Security</a></p>
+					</div>
+				</div>
+			</ul>
+		</nav>
+		<div class="text-box">
+			<h1>Welcome to Sakshat</h1>
+			<p>Find your perfect match with us</p>
+			<a href="login.html"><button id="button1">Join Now</button></a>
+			<button id="button2">Join as Guest</button>
+			<script>
+				const button1 = document.getElementById("button1");
+				const button2 = document.getElementById("button2");
+				const body = document.body;
+			
+				button1.addEventListener("mouseover", () => {
+				  body.style.backgroundImage = "url('images/pic2.jpg')";
+				  body.style.backgroundSize = "cover";
+				  body.style.backgroundPosition = "center";
+				  body.style.transition= "0.8s";
+				});
+			
+				button1.addEventListener("mouseout", () => {
+				  body.style.backgroundImage = "url('images/pic.jpg')";
+				  body.style.backgroundSize = "cover";
+				  body.style.backgroundPosition = "center";
+				  body.style.transition= "0.8s";
+				});
+			
+				button2.addEventListener("mouseover", () => {
+				  body.style.backgroundImage = "url('images/pic3.jpg')";
+				  body.style.backgroundSize = "cover";
+				  body.style.backgroundPosition = "center";
+				  body.style.transition= "0.8s";
+				});
+			
+				button2.addEventListener("mouseout", () => {
+				  body.style.backgroundImage = "url('images/pic.jpg')";
+				  body.style.backgroundSize = "cover";
+				  body.style.backgroundPosition = "center";
+				  body.style.transition= "0.8s";
+				});
+			  </script>
+		</div>
+	</div>
+	<footer>
+		<p>©Copyright 2023 SAKSHAT. All rights reserved.</p>
+	</footer>
+</body>
+</html>
