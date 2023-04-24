@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body{
+    background-image: url(images/pic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header{
+    width:100%;
+    height:100vh;
+    color: #fff;
+    padding: 0 7%;
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+.logo{
+    width:180px;
+    cursor: pointer;
+    margin: 30px 0;
+    position: relative;
+    bottom: 28px;
+    right:90px;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    left:20px;
+    bottom: 20px;
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    left: 100px;
+    bottom: 40px;
+}
+
+footer {
+    background-color: lightcoral;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul li a:hover{
+    color: #ff3e3b;
+    text-decoration: underline;
+}
+
+.text-box{
+    margin-top: 15%;
+	font-size: 25px;
+    position: relative;
+    right: 90px;
+    bottom:50px;
+}
+
+.text-box h1{
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 100px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.text-box p{
+    font-size: 25px;
+    align-items: left;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.text-box .btn{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 30px;
+    background: #ff3e3b;
+    color: #fff;
+    padding: 14px 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.text-box .btn:hover{
+    background-color: #bb3331;
+    font-weight: bold;
+    color: black;
+}
+
+.vip{
+	font-size: 22px;
+	color:darkgoldenrod;
+    position: relative;
+	text-shadow: 0 0 5px #ffc000,
+				 0 0 20px #ffc000,
+				 0 0 60px #ffc000,
+				 0 0 150px #ffc000;
+}
+
+.vip:hover{
+    color:rgb(230, 175, 38);
+	text-decoration: underline;
+	cursor: pointer;
+    
+}
+
+.sprinkle{
+	width: 45px;
+    height: 45px;
+    position: relative;
+	top:10px;
+	left: 38px;
+	border-radius: 100%;
+}
+
+@media only screen and (max-width:800px){
+
+    nav ul{
+        width: 100%;
+        backdrop-filter: blur(15px);
+        position: absolute;
+        top: 65px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        left: 215px;
+        top: 100px;
+    }
+
+    nav ul li a{
+        color: #fff;
+        position: relative;
+        right: 200px;
+        bottom: 110px;
+
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .text-box{
+        position: relative;
+        right:10px;
+    }
+
+    .logo{
+        position: relative;
+        right:20px;
+    }
+    .text-box{
+        flex-direction: column-reverse;
+        margin: 30px 0 10px;
+        position: relative;
+        top:100px;
+    }
+
+    .vip{
+        position: relative;
+        bottom:108px;
+    }
+   
+}

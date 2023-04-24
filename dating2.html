@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sakshat</title>
+	<link rel="stylesheet" href="style4.css">
+</head>
+<body>
+	<div class="header">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="dating.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="vip">VIP</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="#">Safety</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="toggle_menu()">
+        </div>
+        <div class="text-box">
+            <h1>Welcome to Sakshat</h1>
+			<p>Find your perfect match with us</p>
+            <a href="login.html"><button type="button" id="button1" class="btn">Join Now</button></a>
+            <button type="button" id="button2" class="btn">Join As Guest</button>
+            <script>
+				const button1 = document.getElementById("button1");
+				const button2 = document.getElementById("button2");
+				const body = document.body;
+			
+				button1.addEventListener("mouseover", () => {
+				  body.style.backgroundImage = "url('images/pic2.jpg')";
+				  body.style.backgroundSize = "cover";
+				  body.style.backgroundPosition = "center";
+				  body.style.transition= "0.8s";
+				});
+			
+				button1.addEventListener("mouseout", () => {
+				  body.style.backgroundImage = "url('images/pic.jpg')";
+				  body.style.backgroundSize = "cover";
+				  body.style.backgroundPosition = "center";
+				  body.style.transition= "0.8s";
+				});
+			
+				button2.addEventListener("mouseover", () => {
+				  body.style.backgroundImage = "url('images/pic3.jpg')";
+				  body.style.backgroundSize = "cover";
+				  body.style.backgroundPosition = "center";
+				  body.style.transition= "0.8s";
+				});
+			
+				button2.addEventListener("mouseout", () => {
+				  body.style.backgroundImage = "url('images/pic.jpg')";
+				  body.style.backgroundSize = "cover";
+				  body.style.backgroundPosition = "center";
+				  body.style.transition= "0.8s";
+				});
+			  </script>
+        </div>
+    </div>
+	<script>
+        var menulist=document.getElementById("menulist");
+        menulist.style.maxHeight="0px";
+        function toggle_menu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "170px"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+<footer>
+	<p>©Copyright 2023 SAKSHAT. All rights reserved.</p>
+</footer>
+</html>
